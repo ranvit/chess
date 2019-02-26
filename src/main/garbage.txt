@@ -1,0 +1,111 @@
+// GARBAGE - but I might need it
+
+/*	public boolean diagPath(int row, int col, boolean user){
+	Piece currPiece;
+	int currRow = row, currCol = col;
+	for(int i = 1; i < 8; i++){
+		if(currRow+i < 8 && currCol+i < 8){
+			currPiece = this.board[currRow+i][currCol+i].getPiece();
+			if(currPiece != null){
+				if(currPiece.getUser()!=user && (currPiece instanceof Queen || currPiece instanceof Bishop || (currPiece instanceof Pawn && i==1 && user))) return true;
+				break;
+			}
+		}
+		else break;
+	}
+	for(int i = 1; i < 8; i++){
+		if(currRow+i < 8 && currCol-i >= 0){
+			currPiece = this.board[currRow+i][currCol-i].getPiece();
+			if(currPiece != null){
+				if(currPiece.getUser()!=user && (currPiece instanceof Queen || currPiece instanceof Bishop || (currPiece instanceof Pawn && i==1 && user))) return true;
+				break;
+			}
+		}
+		else break;
+	}
+	for(int i = 1; i < 8; i++){
+		if(currRow-i >= 0 && currCol+i < 8){
+			currPiece = this.board[currRow-i][currCol+i].getPiece();
+			if(currPiece != null){
+				if(currPiece.getUser()!=user && (currPiece instanceof Queen || currPiece instanceof Bishop || (currPiece instanceof Pawn && i==1 && !user))) return true;
+				break;
+			}
+		}
+		else break;
+	}
+	for(int i = 1; i < 8; i++){
+		if(currRow-i >= 0 && currCol-i >= 0){
+			currPiece = this.board[currRow-i][currCol-i].getPiece();
+			if(currPiece != null){
+				if(currPiece.getUser()!=user && (currPiece instanceof Queen || currPiece instanceof Bishop || (currPiece instanceof Pawn && i==1 && !user))) return true;
+				break;
+			}
+		}
+		else break;
+	}
+	return false;
+}
+
+public boolean straightPath(int row, int col, boolean user){
+	Piece currPiece;
+	for(int i = row+1; i < 8; i++){
+		currPiece = board[i][col].getPiece();
+		
+		if(currPiece != null){
+			if(currPiece.getUser()!=user && (currPiece instanceof Queen || currPiece instanceof Rook)) return true;
+			break;
+		}
+	}
+	for(int i = row-1; i >= 0; i--){
+		currPiece = board[i][col].getPiece();
+		if(currPiece != null){
+			if(currPiece.getUser()!=user && (currPiece instanceof Queen || currPiece instanceof Rook)) return true;
+			break;
+		}
+	}
+	for(int i = col+1; i < 8; i++){
+		currPiece = board[row][i].getPiece();
+		if(currPiece != null){
+			if(currPiece.getUser()!=user && (currPiece instanceof Queen || currPiece instanceof Rook)) return true;
+			break;
+		}
+	}
+	for(int i = col-1; i >= 0; i--){
+		currPiece = board[row][i].getPiece();
+		if(currPiece != null){
+			if(currPiece.getUser()!=user && (currPiece instanceof Queen || currPiece instanceof Rook)) return true;
+			break;
+		}
+	}
+	return false;
+}
+	public boolean middlePath(int row, int col, boolean user) {
+	Piece currPiece;
+	for(int i = 0; i < 8; i++) {
+		for(int j = 0; j < 8; j++) {
+			currPiece = this.board[i][j].getPiece();
+			if(currPiece != null) {
+				if(currPiece instanceof Middle && 
+						currPiece.validMove(i, j, row, col, true)) return true;
+			}
+		}
+	}
+	return false;
+}
+
+public boolean knightPath(int row, int col, boolean user){
+	Piece currPiece;
+	for(int i = 0; i < 8; i++) {
+		for(int j = 0; j < 8; j++) {
+			currPiece = this.board[i][j].getPiece();
+			if(currPiece != null) {
+				if(currPiece instanceof Knight && currPiece.getUser() != user &&
+						currPiece.validMove(i, j, row, col, true)) {
+					return true;
+				}
+			}
+		}
+	}
+	return false;
+}
+*/
